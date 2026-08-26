@@ -1,223 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Leicester Flat Roofing & Building Services — Flat Roof Specialists. Pitched Roofs, Extensions, Fascias, Soffits & Guttering. Leicester-based, covering the East Midlands. Free quotes!">
-<title>Leicester Flat Roofing & Building Services | Flat Roof Specialists</title>
-<style>
-* {margin:0; padding:0; box-sizing:border-box; font-family:'Arial', sans-serif;}
-:root {--navy:#0F2B48; --gold:#D4A017; --red:#C00000; --light:#F5F7FA; --dark:#222;}
-body {line-height:1.6; color:var(--dark); background:#fff;}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leicester Flat Roofing & Building Services — Flat Roof Specialists. Pitched Roofs, Extensions, Porches & More.">
+    <title>Leicester Flat Roofing & Building Services | Flat Roof Specialists</title>
+    <style>
+        * {margin:0; padding:0; box-sizing:border-box;}
+        :root {--navy:#0F2B48; --gold:#D4A017; --red:#C00000; --light:#F5F7FA; --dark:#222;}
+        body {line-height:1.6; color:var(--dark); background:#fff; font-family:Arial, sans-serif;}
+        
+        /* Header */
+        header {background:var(--navy); color:white; padding:1rem 5%; position:sticky; top:0; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+        .header-container {max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;}
+        .logo {font-size:1.5rem; font-weight:bold; color:var(--gold); text-decoration:none; line-height:1.2;}
+        .nav-links {display:flex; gap:1.5rem; list-style:none; flex-wrap:wrap;}
+        .nav-links a {color:white; text-decoration:none; font-weight:500; transition:color 0.3s;}
+        .nav-links a:hover {color:var(--gold);}
+        .call-btn {background:var(--red); color:white; padding:0.6rem 1.2rem; border-radius:5px; font-weight:bold; text-decoration:none; transition:background 0.3s;}
+        .call-btn:hover {background:#a00;}
 
-/* Header */
-header {background:var(--navy); color:white; padding:1rem 5%; position:sticky; top:0; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.2);}
-.header-container {max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;}
-.logo {font-size:1.5rem; font-weight:bold; color:var(--gold); text-decoration:none; line-height:1.2;}
-.nav-links {display:flex; gap:1.5rem; list-style:none; flex-wrap:wrap;}
-.nav-links a {color:white; text-decoration:none; font-weight:500; transition:color 0.3s;}
-.nav-links a:hover {color:var(--gold);}
-.call-btn {background:var(--red); color:white; padding:0.6rem 1.2rem; border-radius:5px; font-weight:bold; text-decoration:none; white-space:nowrap;}
-.call-btn:hover {background:#a00;}
+        /* Hero */
+        .hero {background:linear-gradient(rgba(15,43,72,0.85), rgba(15,43,72,0.85)), url('20230516_164158.jpg') center/cover no-repeat; color:white; padding:6rem 5%; text-align:center;}
+        .hero h1 {font-size:2.5rem; margin-bottom:1rem;}
+        .hero h1 span {color:var(--gold);}
+        .hero p {font-size:1.2rem; max-width:800px; margin:0 auto 2rem;}
+        .btn-group {display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;}
+        .btn-primary {background:var(--gold); color:var(--navy); padding:1rem 2rem; border-radius:6px; font-size:1.1rem; font-weight:bold; text-decoration:none; transition:transform 0.3s;}
+        .btn-primary:hover {transform:scale(1.05);}
+        .btn-secondary {background:transparent; color:white; border:2px solid white; padding:1rem 2rem; border-radius:6px; font-size:1.1rem; text-decoration:none; transition:all 0.3s;}
+        .btn-secondary:hover {background:white; color:var(--navy);}
 
-/* Hero */
-.hero {background:linear-gradient(rgba(15,43,72,0.85), rgba(15,43,72,0.85)), url('') center/cover no-repeat; color:white; padding:5rem 5%; text-align:center;}
-.hero h1 {font-size:2.4rem; margin-bottom:1rem; line-height:1.2;}
-.hero h1 span {color:var(--gold);}
-.hero p {font-size:1.2rem; max-width:800px; margin:0 auto 2rem;}
-.btn-group {display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;}
-.btn-primary {background:var(--gold); color:var(--navy); padding:1rem 2rem; border-radius:6px; font-size:1.1rem; font-weight:bold; text-decoration:none; transition:background 0.3s;}
-.btn-primary:hover {background:#b8860f;}
-.btn-secondary {background:transparent; color:white; border:2px solid white; padding:1rem 2rem; border-radius:6px; font-size:1.1rem; text-decoration:none; transition:all 0.3s;}
-.btn-secondary:hover {background:white; color:var(--navy);}
+        /* Services */
+        .services {padding:4rem 5%; max-width:1200px; margin:0 auto;}
+        .section-title {text-align:center; font-size:2.2rem; color:var(--navy); margin-bottom:3rem; position:relative;}
+        .section-title::after {content:''; width:80px; height:4px; background:var(--gold); position:absolute; bottom:-10px; left:50%; transform:translateX(-50%);}
+        .services-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;}
+        .service-card {background:var(--light); padding:2rem; border-radius:10px; border-left:4px solid var(--navy); transition:transform 0.3s; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+        .service-card:hover {transform:translateY(-5px);}
+        .service-card h3 {color:var(--navy); font-size:1.3rem; margin-bottom:1rem;}
+        .service-card .icon {font-size:2.5rem; margin-bottom:1rem;}
 
-/* Services */
-.services {padding:4rem 5%; max-width:1200px; margin:0 auto;}
-.section-title {text-align:center; font-size:2.2rem; color:var(--navy); margin-bottom:3rem; position:relative;}
-.section-title::after {content:''; width:80px; height:4px; background:var(--gold); position:absolute; bottom:-10px; left:50%; transform:translateX(-50%);}
-.services-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;}
-.service-card {background:var(--light); padding:2rem; border-radius:10px; border-left:4px solid var(--navy); transition:transform 0.3s;}
-.service-card:hover {transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1);}
-.service-card h3 {color:var(--navy); font-size:1.3rem; margin-bottom:1rem;}
-.service-card .icon {font-size:2.5rem; margin-bottom:1rem;}
+        /* Gallery */
+        .gallery {padding:4rem 5%; max-width:1200px; margin:0 auto;}
+        .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;}
+        .gallery-item {border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform 0.3s;}
+        .gallery-item:hover {transform:scale(1.03);}
+        .gallery-item img {width:100%; height:220px; object-fit:cover;}
+        .gallery-item p {padding:1rem; text-align:center; color:var(--navy); font-weight:500;}
 
-/* Video Section */
-.video-section {background:var(--light); padding:4rem 5%;}
-.video-container {max-width:900px; margin:0 auto; text-align:center;}
-.video-placeholder {background:#ddd; border-radius:10px; padding:4rem 2rem; color:#555; font-size:1.2rem; border:3px dashed #bbb;}
-.video-note {margin-top:1rem; font-size:0.95rem; color:#666;}
+        /* Before & After */
+        .before-after {background:var(--light); padding:4rem 5%;}
+        .ba-container {max-width:1200px; margin:0 auto;}
+        .ba-grid {display:grid; grid-template-columns:1fr 1fr; gap:2rem;}
+        .ba-card {background:white; padding:2rem; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+        .ba-card h3 {color:var(--navy); margin-bottom:1rem; text-align:center;}
+        .ba-card img {width:100%; border-radius:6px; margin-bottom:1rem;}
+        @media (max-width:768px) {.ba-grid {grid-template-columns:1fr;}}
 
-/* Gallery */
-.gallery {padding:4rem 5%; max-width:1200px; margin:0 auto;}
-.gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;}
-.gallery-item {border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform 0.3s; background:var(--light);}
-.gallery-item:hover {transform:scale(1.02);}
-.gallery-item .thumb {width:100%; height:220px; background:linear-gradient(135deg, #ccc, #eee); display:flex; align-items:center; justify-content:center; font-size:3rem; color:#888;}
-.gallery-item p {padding:1rem; text-align:center; font-weight:500; color:var(--navy);}
+        /* About */
+        .about {padding:4rem 5%; background:var(--light);}
+        .about-container {max-width:1000px; margin:0 auto;}
+        .about h2 {font-size:2rem; color:var(--navy); text-align:center; margin-bottom:1.5rem;}
+        .highlight {color:var(--gold); font-weight:bold;}
+        .about-content {display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center;}
+        .about-list {list-style:none;}
+        .about-list li {padding:0.5rem 0; border-bottom:1px solid #ddd;}
+        .about-list li::before {content:'✓ '; font-weight:bold; color:var(--gold);}
+        @media (max-width:768px) {.about-content {grid-template-columns:1fr;}}
 
-/* About */
-.about {background:var(--light); padding:4rem 5%;}
-.about-container {max-width:1000px; margin:0 auto;}
-.about h2 {font-size:2rem; color:var(--navy); margin-bottom:1.5rem; text-align:center;}
-.highlight {color:var(--gold); font-weight:bold;}
-.about-content {display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:2rem;}
-.about-list {list-style:none;}
-.about-list li {padding:0.5rem 0; border-bottom:1px solid #ddd;}
-.about-list li::before {content:'✅ '; font-weight:bold; color:var(--gold);}
-@media(max-width:768px) {.about-content {grid-template-columns:1fr;}}
+        /* Contact */
+        .contact {background:var(--navy); color:white; padding:4rem 5%; text-align:center;}
+        .contact h2 {font-size:2rem; margin-bottom:2rem;}
+        .contact-details {font-size:1.2rem; max-width:600px; margin:0 auto;}
+        .contact-details a {color:var(--gold); text-decoration:none; font-weight:bold;}
+        .contact-details a:hover {text-decoration:underline;}
 
-/* Contact */
-.contact {background:var(--navy); color:white; padding:4rem 5%; text-align:center;}
-.contact h2 {font-size:2rem; margin-bottom:2rem;}
-.contact-details {font-size:1.2rem; line-height:2; max-width:600px; margin:0 auto;}
-.contact-details a {color:var(--gold); text-decoration:none; font-weight:bold;}
-.contact-details a:hover {text-decoration:underline;}
-.area-badge {display:inline-block; background:var(--gold); color:var(--navy); padding:0.5rem 1.2rem; border-radius:30px; font-weight:bold; margin-top:1rem;}
-
-/* Footer */
-footer {background:#0a1d30; color:#aaa; text-align:center; padding:2rem; font-size:0.9rem;}
-
-/* Mobile */
-@media(max-width:768px) {
-.nav-links {display:none;}
-.hero h1 {font-size:1.8rem;}
-}
-</style>
+        /* Footer */
+        footer {background:#0a1f33; color:white; text-align:center; padding:2rem; font-size:0.9rem;}
+    </style>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- Header -->
 <header>
-<div class="header-container">
-<a href="#" class="logo">🔨 Leicester Flat Roofing<br>& Building Services</a>
-<ul class="nav-links">
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Our Work</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<a href="tel:07730402870" class="call-btn">📞 Call Now</a>
-</div>
+    <div class="header-container">
+        <a href="#" class="logo">🏠 Wilson's Flat Roofs</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Our Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:07730402870" class="call-btn">📞 07730 402 870</a>
+    </div>
 </header>
 
-<!-- HERO -->
+<!-- Hero -->
 <section class="hero">
-<h1>Flat Roof Specialists & <span>Full Building Services</span></h1>
-<p>Leicester-based — covering the East Midlands. From small repairs to complete new builds & extensions. Quality workmanship, fair prices, fully insured.</p>
-<div class="btn-group">
-<a href="#contact" class="btn-primary">Get Free Quote</a>
-<a href="#gallery" class="btn-secondary">View Our Work</a>
-</div>
+    <h1>Leicester <span>Flat Roofing</span> & Building Services</h1>
+    <p>Specialists in Flat Roofs • Pitched Roofs • Porches • Extensions • Water Features</p>
+    <div class="btn-group">
+        <a href="tel:07730402870" class="btn-primary">📞 Get a Free Quote</a>
+        <a href="#gallery" class="btn-secondary">📸 View Our Work</a>
+    </div>
 </section>
 
-<!-- SERVICES -->
+<!-- Services -->
 <section class="services" id="services">
-<h2 class="section-title">What We Do</h2>
-<div class="services-grid">
-<div class="service-card">
-<div class="icon">🏠</div>
-<h3>Flat Roofs — Our Speciality</h3>
-<p>Expert installation & repair. Felt, torch-on, rubber systems. Residential & commercial. Fully guaranteed.</p>
-</div>
-<div class="service-card">
-<div class="icon">🏡</div>
-<h3>Pitched Roofs</h3>
-<p>Tile & slate roofs — new installations, repairs, re-roofs, ridge tiles, flashing, storm damage.</p>
-</div>
-<div class="service-card">
-<div class="icon">🏗️</div>
-<h3>Extensions & Structural Work</h3>
-<p>Full groundworks, brickwork, steel beams, timber framing, roof structures. Complete project management.</p>
-</div>
-<div class="service-card">
-<div class="icon">🔲</div>
-<h3>Fascia, Soffits & Guttering</h3>
-<p>Supply & fit all systems. Replacements, repairs, maintenance. Clean finish — all colours available.</p>
-</div>
-<div class="service-card">
-<div class="icon">🔧</div>
-<h3>All Roof Repairs</h3>
-<p>Leaks, slipped tiles, emergency repairs. Fast call-outs. No job too small — fixed quickly & reliably.</p>
-</div>
-<div class="service-card">
-<div class="icon">💧</div>
-<h3>Exterior & Landscape Features</h3>
-<p>Water features, custom outdoor builds, hard landscaping. Unique projects built to your design.</p>
-</div>
-</div>
+    <h2 class="section-title">What We Do</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="icon">🏠</div>
+            <h3>Flat Roofing</h3>
+            <p>Specialist flat roof installations & repairs. Felt, GRP, rubber systems — guaranteed quality finish.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🏡</div>
+            <h3>Pitched Roofs</h3>
+            <p>Full roof replacements, repairs, tiling & slating. Complete roofing solutions.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🚪</div>
+            <h3>Porches & Extensions</h3>
+            <p>Custom-built porches & home extensions — from design to completion.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">💧</div>
+            <h3>Water Features</h3>
+            <p>Beautiful bespoke water features & garden designs — expert waterproofing.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🔧</div>
+            <h3>Roof Repairs</h3>
+            <p>Leak repairs, flat roof maintenance, gutter & fascia work. Fast response service.</p>
+        </div>
+        <div class="service-card">
+            <div class="icon">🏗️</div>
+            <h3>General Building</h3>
+            <p>All aspects of building work undertaken. Local, reliable, quality assured.</p>
+        </div>
+    </div>
 </section>
 
-<!-- VIDEO SECTION -->
-<section class="video-section">
-<div class="video-container">
-<h2 class="section-title">Projects in Action</h2>
-<div class="video-placeholder">
-🎥 Water Feature — Coming Soon<br>
-<span style="font-size:1rem; color:#777;">Video will be added here — send me the link when you can!</span>
-</div>
-<p class="video-note">Demonstrating our custom exterior & landscape work — video coming soon.</p>
-</div>
-</section>
-
-<!-- GALLERY -->
+<!-- Gallery -->
 <section class="gallery" id="gallery">
-<h2 class="section-title">Our Recent Work</h2>
-<div class="gallery-grid">
-<!-- Flat Roofs -->
-<div class="gallery-item"><div class="thumb">🏠</div><p>✅ New Flat Roof — Residential</p></div>
-<div class="gallery-item"><div class="thumb">🏢</div><p>🏢 Commercial Flat Roof Project</p></div>
-<div class="gallery-item"><div class="thumb">⬛</div><p>✅ Premium Flat Roof — Completed</p></div>
-<div class="gallery-item"><div class="thumb">🔨</div><p>🔧 Flat Roof — New Build</p></div>
-<!-- Extension / Structural -->
-<div class="gallery-item"><div class="thumb">🏗️</div><p>🏗️ Extension — Foundations & Steel</p></div>
-<div class="gallery-item"><div class="thumb">🪵</div><p>🪵 Roof Joist Framework — Full Spec</p></div>
-<div class="gallery-item"><div class="thumb">📐</div><p>📐 Structural Timber Installation</p></div>
-<div class="gallery-item"><div class="thumb">🧱</div><p>🧱 Brickwork & New Build Progress</p></div>
-<div class="gallery-item"><div class="thumb">🏠</div><p>✅ Flat Roof Over Extension — Done</p></div>
-<div class="gallery-item"><div class="thumb">🔨</div><p>🔨 OSB Decking — Roof Preparation</p></div>
-<div class="gallery-item"><div class="thumb">✨</div><p>✨ Finished Flat Roof — Large Project</p></div>
-<div class="gallery-item"><div class="thumb">🛠️</div><p>🛠️ Roof Installation — In Progress</p></div>
-</div>
+    <h2 class="section-title">Our Recent Work</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="20230511_093717.jpg" alt="Porch before work began">
+            <p>Porch — Before</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20240112_144545.jpg" alt="Completed pitched roof with van on site">
+            <p>Roof Replacement — Completed</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20230515_095052.jpg" alt="Water feature under construction">
+            <p>Water Feature — Build in Progress</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20230515_152330.jpg" alt="Water feature waterproofed">
+            <p>Water Feature — Waterproofed</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20230516_164138.jpg" alt="Completed water feature">
+            <p>Water Feature — Finished</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20230516_164158.jpg" alt="Finished stone & water feature">
+            <p>Landscaping & Water Feature</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20240111_100949.jpg" alt="Bungalow roof before work">
+            <p>Bungalow Roof — Before</p>
+        </div>
+    </div>
 </section>
 
-<!-- ABOUT -->
+<!-- About -->
 <section class="about" id="about">
-<div class="about-container">
-<h2>About <span class="highlight">Leicester Flat Roofing & Building Services</span></h2>
-<div class="about-content">
-<div>
-<p>Hi, I'm Anthony Wilson — local, reliable tradesman based in Leicester, specialising in flat roofing with full expertise in pitched roofs, extensions, structural work, and exterior finishing. I handle every job personally — from small repairs to full new builds — ensuring quality, honesty, and reliability on every project.</p>
-</div>
-<div>
-<ul class="about-list">
-<li>Flat roof specialists — our main trade</li>
-<li>Extensions & structural work undertaken</li>
-<li>All work fully guaranteed</li>
-<li>Free, no-obligation quotes</li>
-<li>Fully insured</li>
-<li>Leicester based — covering the East Midlands</li>
-</ul>
-</div>
-</div>
-</div>
+    <div class="about-container">
+        <h2>About <span class="highlight">Wilson's Flat Roofs</span></h2>
+        <div class="about-content">
+            <div>
+                <p>Based in Leicester, we are a local, family-run business specialising in all aspects of flat roofing and building work. With years of experience and a commitment to quality, we take pride in every project we complete.</p>
+                <br>
+                <p>From small repairs to full installations and building extensions, we offer a professional, reliable service with free no-obligation quotes.</p>
+            </div>
+            <ul class="about-list">
+                <li>Free, no-obligation quotes</li>
+                <li>Fully insured & qualified</li>
+                <li>5-star local reputation</li>
+                <li>All work guaranteed</li>
+                <li>Competitive pricing</li>
+                <li>Areas: Leicester & surrounding counties</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
-<!-- CONTACT -->
+<!-- Contact -->
 <section class="contact" id="contact">
-<h2>Get In Touch — Free Quote</h2>
-<div class="contact-details">
-<p><strong>📞 Phone:</strong> <a href="tel:07730402870">07730 402 870</a></p>
-<p><strong>📧 Email:</strong> <a href="mailto:wilsonsflatroofing@outlook.com">wilsonsflatroofing@outlook.com</a></p>
-<p class="area-badge">📍 Leicester Based — Covering the East Midlands (up to 50 miles)</p>
-<p style="margin-top:2rem;">Leicester • Nottingham • Coventry • Birmingham • Northampton • Loughborough • Hinckley & surrounding areas.<br>Call or message today — quick response & free no-obligation quotes!</p>
-</div>
+    <h2>Get In Touch</h2>
+    <div class="contact-details">
+        <p>📞 <strong>Call:</strong> <a href="tel:07730402870">07730 402 870</a></p>
+        <p>📧 <strong>Email:</strong> <a href="mailto:wilsonsflatroofing@outlook.com">wilsonsflatroofing@outlook.com</a></p>
+        <p>📍 <strong>Based in Leicester — covering up to 50 miles</strong></p>
+        <br>
+        <p><em>Free quotes • Fast response • Quality workmanship guaranteed</em></p>
+    </div>
 </section>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer>
-<p>© 2026 Leicester Flat Roofing & Building Services — Flat Roof Specialists. All rights reserved.</p>
-<p>Flat Roofs • Pitched Roofs • Extensions • Fascias • Soffits • Guttering</p>
-<p style="margin-top:0.5rem; font-size:0.8rem;">Anthony Wilson — Leicester based, covering the East Midlands</p>
+    <p>&copy; 2026 Wilson's Flat Roofing & Building Services. All rights reserved.</p>
+    <p>Leicester, UK | Tel: 07730 402 870 | Email: wilsonsflatroofing@outlook.com</p>
 </footer>
 
 </body>
