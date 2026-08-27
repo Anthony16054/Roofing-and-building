@@ -43,6 +43,19 @@
         .service-card h3 {color:var(--navy); font-size:1.3rem; margin-bottom:1rem;}
         .service-card .icon {font-size:2.5rem; margin-bottom:1rem;}
 
+        /* Before & After — FEATURED */
+        .featured-ba {background:var(--light); padding:4rem 5%;}
+        .ba-container {max-width:1200px; margin:0 auto;}
+        .ba-grid {display:grid; grid-template-columns:1fr 1fr; gap:2rem;}
+        .ba-card {background:white; padding:1.5rem; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08); text-align:center;}
+        .ba-card h3 {color:var(--navy); margin-bottom:1rem; font-size:1.2rem;}
+        .ba-card img {width:100%; height:300px; object-fit:cover; border-radius:6px; margin-bottom:1rem;}
+        .ba-label {display:inline-block; padding:0.4rem 1.2rem; border-radius:20px; font-weight:bold; margin-bottom:1rem;}
+        .before-label {background:#ffcccc; color:#990000;}
+        .after-label {background:#ccffcc; color:#006600;}
+        .ba-description {max-width:700px; margin:2rem auto 0; text-align:center; font-size:1.1rem; line-height:1.8;}
+        @media (max-width:768px) {.ba-grid {grid-template-columns:1fr;}}
+
         /* Gallery */
         .gallery {padding:4rem 5%; max-width:1200px; margin:0 auto;}
         .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;}
@@ -81,7 +94,8 @@
         <a href="#" class="logo">🏠 Wilson's Flat Roofs</a>
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
-            <li><a href="#gallery">Our Work</a></li>
+            <li><a href="#featured">Featured Work</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -95,7 +109,7 @@
     <p>Specialists in Flat Roofs • Pitched Roofs • Porches • Extensions • Water Features</p>
     <div class="btn-group">
         <a href="tel:07730402870" class="btn-primary">📞 Get a Free Quote</a>
-        <a href="#gallery" class="btn-secondary">📸 View Our Work</a>
+        <a href="#featured" class="btn-secondary">📸 See Our Work</a>
     </div>
 </section>
 
@@ -115,8 +129,8 @@
         </div>
         <div class="service-card">
             <div class="icon">🚪</div>
-            <h3>Porches & Extensions</h3>
-            <p>Custom-built porches & home extensions — from design to completion.</p>
+            <h3>Porch Roofs</h3>
+            <p>Slate & tile porch roofs. Lead work, flashing, full refurbishment — original features preserved.</p>
         </div>
         <div class="service-card">
             <div class="icon">💧</div>
@@ -126,7 +140,7 @@
         <div class="service-card">
             <div class="icon">🔧</div>
             <h3>Roof Repairs</h3>
-            <p>Leak repairs, flat roof maintenance, gutter & fascia work. Fast response service.</p>
+            <p>Leak repairs, lead work, gutter & fascia. Fast response service.</p>
         </div>
         <div class="service-card">
             <div class="icon">🏗️</div>
@@ -136,9 +150,34 @@
     </div>
 </section>
 
+<!-- FEATURED BEFORE & AFTER — PORCH -->
+<section class="featured-ba" id="featured">
+    <div class="ba-container">
+        <h2 class="section-title">Featured Work — Porch Roof Replacement</h2>
+        <div class="ba-grid">
+            <div class="ba-card">
+                <span class="ba-label before-label">❌ BEFORE</span>
+                <img src="20240805_142230.jpg" alt="Porch — Before roof replacement">
+                <h3>Worn Slates & Failed Lead</h3>
+                <p>Old, weathered slates, perished lead flashing, leaking around the roof edges.</p>
+            </div>
+            <div class="ba-card">
+                <span class="ba-label after-label">✅ AFTER</span>
+                <img src="20240918_105211.jpg" alt="Porch — After roof replacement">
+                <h3>New Slates & Full Lead Work</h3>
+                <p>Re-slated with matching tiles + new lead flashing & valleys. 100% weatherproof — original door & windows fully preserved.</p>
+            </div>
+        </div>
+        <div class="ba-description">
+            <p><strong>✅ Porch Roof & Lead Replacement — Leicester</strong><br>
+            Removed worn slates & failed lead. Fully re-slated with matching tiles + new lead flashing & valleys. Weatherproofed & restored — original door, windows & features preserved. Quality workmanship that lasts.</p>
+        </div>
+    </div>
+</section>
+
 <!-- Gallery -->
 <section class="gallery" id="gallery">
-    <h2 class="section-title">Our Recent Work</h2>
+    <h2 class="section-title">More of Our Work</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="20230511_093717.jpg" alt="Porch before work began">
