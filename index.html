@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Leicester Flat Roofing & Building Services — Domestic & Commercial Roofing Specialists.">
+    <meta name="description" content="Wilson's Flat Roofs — Leicester Flat Roofing & Building Services. Flat roofs, porch builds, pitched roofs, box gutters, water features. Free quotes — 07730 402 870">
     <title>Wilson's Flat Roofs | Leicester Roofing & Building Services</title>
     <style>
         * {margin:0; padding:0; box-sizing:border-box;}
         :root {--navy:#0F2B48; --gold:#D4A017; --red:#C00000; --light:#F5F7FA; --dark:#222;}
-        body {line-height:1.6; color:var(--dark); background:#fff; font-family:Arial, sans-serif;}
+        body {line-height:1.6; color:var(--dark); background:#fff; font-family:'Segoe UI', Roboto, Arial, sans-serif;}
         
         header {background:var(--navy); color:white; padding:1rem 5%; position:sticky; top:0; z-index:100; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
         .header-container {max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;}
@@ -16,15 +16,15 @@
         .nav-links {display:flex; gap:1.5rem; list-style:none; flex-wrap:wrap;}
         .nav-links a {color:white; text-decoration:none; font-weight:500; transition:color 0.3s;}
         .nav-links a:hover {color:var(--gold);}
-        .call-btn {background:var(--red); color:white; padding:0.6rem 1.2rem; border-radius:5px; font-weight:bold; text-decoration:none; transition:background 0.3s;}
+        .call-btn {background:var(--red); color:white; padding:0.6rem 1.2rem; border-radius:5px; font-weight:bold; text-decoration:none; transition:background 0.3s; white-space:nowrap;}
         .call-btn:hover {background:#a00;}
 
-        .hero {background:linear-gradient(rgba(15,43,72,0.9), rgba(15,43,72,0.9)); color:white; padding:6rem 5%; text-align:center;}
-        .hero h1 {font-size:2.5rem; margin-bottom:1rem;}
+        .hero {background:linear-gradient(rgba(15,43,72,0.92), rgba(15,43,72,0.92)); color:white; padding:5rem 5%; text-align:center;}
+        .hero h1 {font-size:clamp(2rem,5vw,2.8rem); margin-bottom:1rem; line-height:1.2;}
         .hero h1 span {color:var(--gold);}
-        .hero p {font-size:1.2rem; max-width:800px; margin:0 auto 2rem;}
+        .hero p {font-size:1.2rem; max-width:800px; margin:0 auto 2rem; opacity:0.95;}
         .btn-group {display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;}
-        .btn-primary {background:var(--gold); color:var(--navy); padding:1rem 2rem; border-radius:6px; font-size:1.1rem; font-weight:bold; text-decoration:none; transition:transform 0.3s;}
+        .btn-primary {background:var(--gold); color:var(--navy); padding:1rem 2rem; border-radius:6px; font-size:1.1rem; font-weight:bold; text-decoration:none; transition:transform 0.3s; border:none; cursor:pointer;}
         .btn-primary:hover {transform:scale(1.05);}
         .btn-secondary {background:transparent; color:white; border:2px solid white; padding:1rem 2rem; border-radius:6px; font-size:1.1rem; text-decoration:none; transition:all 0.3s;}
         .btn-secondary:hover {background:white; color:var(--navy);}
@@ -32,32 +32,33 @@
         .services {padding:4rem 5%; max-width:1200px; margin:0 auto;}
         .section-title {text-align:center; font-size:2.2rem; color:var(--navy); margin-bottom:3rem; position:relative;}
         .section-title::after {content:''; width:80px; height:4px; background:var(--gold); position:absolute; bottom:-10px; left:50%; transform:translateX(-50%);}
-        .services-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:2rem;}
-        .service-card {background:var(--light); padding:2rem; border-radius:10px; border-left:4px solid var(--navy); transition:transform 0.3s; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+        .services-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;}
+        .service-card {background:var(--light); padding:2rem; border-radius:10px; border-left:4px solid var(--navy); transition:transform 0.3s; box-shadow:0 2px 8px rgba(0,0,0,0.05);}
         .service-card:hover {transform:translateY(-5px);}
-        .service-card h3 {color:var(--navy); font-size:1.3rem; margin-bottom:1rem;}
-        .service-card .icon {font-size:2.5rem; margin-bottom:1rem;}
+        .service-card h3 {color:var(--navy); font-size:1.25rem; margin:0.5rem 0 1rem;}
+        .icon {font-size:2rem;}
 
         .featured-ba {background:var(--light); padding:4rem 5%;}
         .ba-container {max-width:1200px; margin:0 auto;}
         .ba-single {background:white; padding:2rem; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.06); margin-bottom:3rem;}
-        .ba-label {display:inline-block; padding:0.4rem 1.2rem; border-radius:20px; font-weight:bold; margin-bottom:1rem;}
+        .ba-label {display:inline-block; padding:0.4rem 1.2rem; border-radius:20px; font-weight:bold; margin:0.5rem 0 1rem;}
         .before-label {background:#ffcccc; color:#990000;}
         .during-label {background:#fff3cd; color:#856404;}
         .after-label {background:#ccffcc; color:#006600;}
-        .ba-description {max-width:700px; margin:0 auto; text-align:center; font-size:1.1rem; line-height:1.8;}
-        .work-img {width:100%; max-width:500px; border-radius:8px; margin:1rem auto; display:block;}
+        .ba-description {max-width:700px; margin:0 auto; text-align:center; font-size:1.05rem; line-height:1.8;}
+        .work-img {width:100%; max-width:500px; border-radius:8px; margin:1rem auto; display:block; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
 
         .commercial {padding:4rem 5%; max-width:1200px; margin:0 auto;}
         .commercial-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr)); gap:2rem;}
-        .commercial-card {background:var(--light); padding:2rem; border-radius:12px; border-left:4px solid var(--navy); box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+        .commercial-card {background:var(--light); padding:2rem; border-radius:12px; border-left:4px solid var(--navy); box-shadow:0 2px 8px rgba(0,0,0,0.05);}
         .commercial-card h3 {color:var(--navy); margin-bottom:0.5rem; font-size:1.3rem;}
         .commercial-tag {display:inline-block; background:var(--gold); color:white; padding:0.3rem 1rem; border-radius:20px; font-size:0.85rem; font-weight:bold; margin-bottom:1rem;}
 
         .gallery {padding:4rem 5%; max-width:1200px; margin:0 auto;}
-        .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;}
-        .gallery-item {background:var(--light); padding:2rem; border-radius:10px; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
-        .gallery-item .step {display:inline-block; background:var(--gold); color:white; padding:0.25rem 0.75rem; border-radius:15px; font-size:0.85rem; margin-bottom:1rem;}
+        .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1.5rem;}
+        .gallery-item {background:var(--light); padding:2rem; border-radius:10px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+        .gallery-item .step {display:inline-block; background:var(--gold); color:white; padding:0.25rem 0.75rem; border-radius:15px; font-size:0.85rem; margin-bottom:1rem; font-weight:bold;}
+        .gallery-img {width:100%; border-radius:8px; margin-bottom:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
 
         .about {padding:4rem 5%; background:var(--light);}
         .about-container {max-width:1000px; margin:0 auto;}
@@ -65,7 +66,7 @@
         .highlight {color:var(--gold); font-weight:bold;}
         .about-list {list-style:none; max-width:600px; margin:0 auto;}
         .about-list li {padding:0.8rem 0; border-bottom:1px solid #ddd;}
-        .about-list li::before {content:'✓ '; font-weight:bold; color:var(--gold);}
+        .about-list li::before {content:'✓ '; font-weight:bold; color:var(--gold); margin-right:0.5rem;}
 
         .contact {background:var(--navy); color:white; padding:4rem 5%; text-align:center;}
         .contact h2 {font-size:2rem; margin-bottom:2rem;}
@@ -74,6 +75,11 @@
         .contact-details a:hover {text-decoration:underline;}
 
         footer {background:#0a1f33; color:white; text-align:center; padding:2rem; font-size:0.9rem;}
+
+        @media (max-width:768px) {
+            .header-container {text-align:center;}
+            .nav-links {justify-content:center; margin:1rem 0;}
+        }
     </style>
 </head>
 <body>
@@ -81,14 +87,16 @@
 <header>
     <div class="header-container">
         <a href="#" class="logo">🏠 Wilson's Flat Roofs</a>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#featured">Our Work</a></li>
-            <li><a href="#commercial">Commercial</a></li>
-            <li><a href="#gallery">Water Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Our Work</a></li>
+                <li><a href="#commercial">Commercial</a></li>
+                <li><a href="#water">Water Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <a href="tel:07730402870" class="call-btn">📞 07730 402 870</a>
     </div>
 </header>
@@ -98,7 +106,7 @@
     <p>Domestic & Commercial Specialists — Flat Roof Repairs • Porch Builds • Pitched Roofs • Box Gutters • Water Features</p>
     <div class="btn-group">
         <a href="tel:07730402870" class="btn-primary">📞 Get a Free Quote</a>
-        <a href="#featured" class="btn-secondary">📸 See Our Work</a>
+        <a href="#work" class="btn-secondary">📸 See Our Work</a>
     </div>
 </section>
 
@@ -138,33 +146,31 @@
     </div>
 </section>
 
-<section class="featured-ba" id="featured">
+<section class="featured-ba" id="work">
     <div class="ba-container">
         <h2 class="section-title">Our Recent Work</h2>
 
         <div class="ba-single">
-            <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🏠 Failed Felt Roof Repair — Full Strip & Refelt</h3>
+            <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🏠 Failed Felt Roof — Full Strip & Refelt</h3>
             <div class="ba-description">
                 <img src="FB_IMG_1787822180606.jpg" alt="Old failed felt roof before repair" class="work-img">
-                <p><span class="ba-label before-label">❌ BEFORE</span> — Old felt roof had failed, and the bricks were perishing and porous — letting in water.</p>
+                <p><span class="ba-label before-label">❌ BEFORE</span> — Old felt roof failed, bricks perishing & porous — letting water in.</p>
                 <br>
                 <img src="FB_IMG_1787822191071.jpg" alt="New felt roof — fully repaired and finished" class="work-img">
-                <p><span class="ba-label after-label">✅ AFTER</span> — Completely stripped back, all surfaces primed, fully re-felted — carries a <strong>20-year guarantee</strong>.</p>
+                <p><span class="ba-label after-label">✅ AFTER</span> — Stripped back, primed, fully re-felted. <strong>20-year guarantee.</strong></p>
                 <br>
                 <p><strong>✅ Full strip & re-felt — Leicester</strong></p>
             </div>
         </div>
 
         <div class="ba-single">
-            <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🚪 Complete Porch Build — From Start to Finish</h3>
+            <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🚪 Complete Porch Build</h3>
             <div class="ba-description">
-                <img src="20240213_122024.jpg" alt="Porch build — during construction" class="work-img">
-                <p><span class="ba-label before-label">❌ BEFORE</span> — Site preparation for brand-new porch.</p>
-                <br>
-                <p><span class="ba-label during-label">🏗️ UNDER CONSTRUCTION</span> — Walls built, roof frame in place — taking shape.</p>
+                <img src="20240213_122024.jpg" alt="Porch during construction" class="work-img">
+                <p><span class="ba-label before-label">🏗️ DURING</span> — Walls built, roof frame in place — taking shape.</p>
                 <br>
                 <img src="20240213_122202.jpg" alt="Completed porch — fully finished" class="work-img">
-                <p><span class="ba-label after-label">✅ COMPLETE</span> — Roofed, glazed, door fitted — fully weatherproofed and ready to use.</p>
+                <p><span class="ba-label after-label">✅ FINISHED</span> — Roofed, glazed, door fitted — fully weatherproofed.</p>
                 <br>
                 <p><strong>✅ Full porch build — Foundations to finish — Leicester</strong></p>
             </div>
@@ -174,56 +180,55 @@
             <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">📐 Box Gutter Replacement</h3>
             <div class="ba-description">
                 <img src="20230515_095052.jpg" alt="Old leaking box gutter" class="work-img">
-                <p><span class="ba-label before-label">❌ BEFORE</span> — Old, leaking, deteriorated — letting in water & causing damage.</p>
+                <p><span class="ba-label before-label">❌ BEFORE</span> — Old, leaking, deteriorated — causing water damage.</p>
                 <br>
                 <img src="20230515_152330.jpg" alt="New box gutter installed" class="work-img">
-                <p><span class="ba-label after-label">✅ AFTER</span> — Old gutter removed — new system installed, fully lined, sealed & tested.</p>
+                <p><span class="ba-label after-label">✅ AFTER</span> — Removed, new system installed, fully lined, sealed & tested.</p>
                 <br>
                 <p><strong>✅ Box gutter replacement — Leicester</strong></p>
             </div>
         </div>
-
     </div>
 </section>
 
 <section class="commercial" id="commercial">
     <h2 class="section-title">🏢 Commercial Projects</h2>
-    <p style="text-align:center; max-width:700px; margin:0 auto 3rem; font-size:1.1rem;">We also undertake large-scale commercial roofing work — from industrial units to retail premises. Fully insured, experienced & reliable.</p>
+    <p style="text-align:center; max-width:700px; margin:0 auto 3rem; font-size:1.1rem;">We undertake large-scale commercial roofing — industrial units, retail premises & more. Fully insured, experienced & reliable.</p>
     <div class="commercial-grid">
         <div class="commercial-card">
             <span class="commercial-tag">COMMERCIAL</span>
-            <h3>Commercial Roofing Projects</h3>
+            <h3>Commercial Roofing</h3>
             <p>Large-scale roof installations — industrial & commercial premises. Full system replacement, completed on time & within budget.</p>
         </div>
         <div class="commercial-card">
             <span class="commercial-tag">COMMERCIAL</span>
-            <h3>Industrial Roofing Work</h3>
-            <p>Commercial property roofing — large flat roof systems. Fully bonded, weatherproof, and built to withstand heavy use.</p>
+            <h3>Industrial Roofing</h3>
+            <p>Commercial property roofing — large flat roof systems. Fully bonded, weatherproof, built to last.</p>
         </div>
     </div>
-    <p style="text-align:center; margin-top:3rem; font-size:1.1rem; font-weight:500;">📞 For commercial enquiries & contracts — call us directly on <a href="tel:07730402870" style="color:var(--gold); font-weight:bold;">07730 402 870</a></p>
+    <p style="text-align:center; margin-top:3rem; font-size:1.1rem; font-weight:500;">📞 Commercial enquiries: <a href="tel:07730402870" style="color:var(--gold); font-weight:bold; text-decoration:none;">07730 402 870</a></p>
 </section>
 
-<section class="gallery" id="gallery">
-    <h2 class="section-title">Water Feature — Full Build Process</h2>
+<section class="gallery" id="water">
+    <h2 class="section-title">💧 Water Feature — Full Build Process</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
             <span class="step">Step 1</span>
-            <img src="20260408_140306.jpg" alt="Water feature — frame & first coat" style="width:100%; border-radius:6px; margin-bottom:1rem;">
+            <img src="20260408_140306.jpg" alt="Water feature — frame & first coat" class="gallery-img">
             <p>Timber structure & first coat of resin</p>
         </div>
         <div class="gallery-item">
             <span class="step">Step 2</span>
-            <img src="20260409_113331.jpg" alt="Water feature — finished" style="width:100%; border-radius:6px; margin-bottom:1rem;">
-            <p>Second coat of resin — final colour applied</p>
+            <img src="20260409_113331.jpg" alt="Water feature — finished" class="gallery-img">
+            <p>Second coat — final colour applied</p>
         </div>
         <div class="gallery-item">
             <span class="step">Step 3</span>
             <p>Water testing — filling & checking for leaks</p>
         </div>
         <div class="gallery-item">
-            <span class="step">Complete ✅</span>
-            <p>Finished water feature — fully operational</p>
+            <span class="step">✅ Complete</span>
+            <p>Fully operational & ready to enjoy</p>
         </div>
     </div>
 </section>
@@ -231,7 +236,7 @@
 <section class="about" id="about">
     <div class="about-container">
         <h2>About <span class="highlight">Wilson's Flat Roofs</span></h2>
-        <div class="ba-description">
+        <div style="max-width:700px; margin:0 auto; text-align:center; font-size:1.1rem; line-height:1.8;">
             <p>Based in Leicester, we are a local, family-run business specialising in all aspects of domestic and commercial roofing and building work — from complete porch builds to full roof replacements and repairs. With years of experience and a commitment to quality, we take pride in every project we complete — big or small.</p>
             <br>
             <ul class="about-list">
@@ -241,7 +246,7 @@
                 <li>Complete porch builds undertaken</li>
                 <li>20-year guarantee on felt roofs</li>
                 <li>All work guaranteed</li>
-                <li>Based in Leicester — covering Leicestershire & surrounding areas</li>
+                <li>Based in Leicester — covering Leicestershire & up to 50 miles</li>
             </ul>
         </div>
     </div>
@@ -252,7 +257,7 @@
     <div class="contact-details">
         <p>📞 <strong>Call:</strong> <a href="tel:07730402870">07730 402 870</a></p>
         <p>📧 <strong>Email:</strong> <a href="mailto:wilsonsflatroofing@outlook.com">wilsonsflatroofing@outlook.com</a></p>
-        <p>📍 <strong>Based in Leicester — covering Leicestershire & up to 50 miles</strong></p>
+        <p>📍 <strong>Based in Leicester — covering Leicestershire & surrounding areas</strong></p>
         <br>
         <p><em>Free quotes • Fast response • Quality workmanship guaranteed</em></p>
     </div>
