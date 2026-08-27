@@ -56,9 +56,14 @@
         .ba-description {max-width:700px; margin:2rem auto 0; text-align:center; font-size:1.1rem; line-height:1.8;}
         @media (max-width:768px) {.ba-grid {grid-template-columns:1fr;}}
 
-        /* Gallery — EMPTY FOR NOW, READY FOR NEW PHOTOS */
+        /* Gallery — WATER FEATURE BUILD SEQUENCE */
         .gallery {padding:4rem 5%; max-width:1200px; margin:0 auto;}
-        .gallery-note {text-align:center; color:#666; font-style:italic; padding:2rem;}
+        .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;}
+        .gallery-item {border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform 0.3s; background:white;}
+        .gallery-item:hover {transform:scale(1.03);}
+        .gallery-item img {width:100%; height:220px; object-fit:cover;}
+        .gallery-item p {padding:1rem; text-align:center; color:var(--navy); font-weight:500; line-height:1.4;}
+        .gallery-item .step {display:inline-block; background:var(--gold); color:white; padding:0.25rem 0.75rem; border-radius:15px; font-size:0.85rem; margin-bottom:0.5rem;}
 
         /* About */
         .about {padding:4rem 5%; background:var(--light);}
@@ -91,7 +96,7 @@
         <ul class="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#featured">Featured Work</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#gallery">Water Features</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -105,7 +110,7 @@
     <p>Specialists in Flat Roofs • Pitched Roofs • Porches • Extensions • Water Features</p>
     <div class="btn-group">
         <a href="tel:07730402870" class="btn-primary">📞 Get a Free Quote</a>
-        <a href="#featured" class="btn-secondary">📸 See Our Work</a>
+        <a href="#gallery" class="btn-secondary">📸 See Our Work</a>
     </div>
 </section>
 
@@ -131,7 +136,7 @@
         <div class="service-card">
             <div class="icon">💧</div>
             <h3>Water Features</h3>
-            <p>Beautiful bespoke water features & garden designs — expert waterproofing.</p>
+            <p>Bespoke timber & resin water features. Full build process — from frame to final fill.</p>
         </div>
         <div class="service-card">
             <div class="icon">🔧</div>
@@ -171,14 +176,27 @@
     </div>
 </section>
 
-<!-- Gallery — READY FOR NEW PHOTOS -->
+<!-- GALLERY — WATER FEATURE BUILD SEQUENCE -->
 <section class="gallery" id="gallery">
-    <h2 class="section-title">More of Our Work</h2>
-    <p class="gallery-note">New photos coming soon — more projects being added regularly!</p>
-    <!-- 
-    WHEN YOU'RE READY TO ADD MORE PHOTOS — TELL ME THE FILENAMES & DESCRIPTIONS, 
-    AND I'LL GIVE YOU THE FULL GALLERY CODE TO PASTE RIGHT HERE!
-    -->
+    <h2 class="section-title">Water Feature — Full Build Process</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="20260408_140306.jpg" alt="Timber structure and first coat of resin">
+            <p><span class="step">Step 1</span><br>Timber structure & first coat of resin</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20260409_113331.jpg" alt="Second coat of resin with final colour">
+            <p><span class="step">Step 2</span><br>Second coat of resin — final colour applied</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20260425_103139.jpg" alt="Water testing — filling and checking">
+            <p><span class="step">Step 3</span><br>Water testing — filling & checking for leaks</p>
+        </div>
+        <div class="gallery-item">
+            <img src="20260525_103051.jpg" alt="Fully completed water feature">
+            <p><span class="step">Complete ✅</span><br>Finished water feature — fully operational</p>
+        </div>
+    </div>
 </section>
 
 <!-- About -->
@@ -189,7 +207,7 @@
             <div>
                 <p>Based in Leicester, we are a local, family-run business specialising in all aspects of flat roofing and building work. With years of experience and a commitment to quality, we take pride in every project we complete.</p>
                 <br>
-                <p>From small repairs to full installations and building extensions, we offer a professional, reliable service with free no-obligation quotes.</p>
+                <p>From small repairs to full installations, porch refurbishments and bespoke water features — we offer a professional, reliable service with free no-obligation quotes.</p>
             </div>
             <ul class="about-list">
                 <li>Free, no-obligation quotes</li>
