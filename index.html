@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+heret<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
         .call-btn {background:var(--red); color:white; padding:0.6rem 1.2rem; border-radius:5px; font-weight:bold; text-decoration:none; transition:background 0.3s;}
         .call-btn:hover {background:#a00;}
 
-        .hero {background:linear-gradient(rgba(15,43,72,0.85), rgba(15,43,72,0.85)), url('20240918_105211.jpg') center/cover no-repeat; color:white; padding:6rem 5%; text-align:center;}
+        .hero {background:linear-gradient(rgba(15,43,72,0.9), rgba(15,43,72,0.9)); color:white; padding:6rem 5%; text-align:center;}
         .hero h1 {font-size:2.5rem; margin-bottom:1rem;}
         .hero h1 span {color:var(--gold);}
         .hero p {font-size:1.2rem; max-width:800px; margin:0 auto 2rem;}
@@ -42,47 +42,34 @@
         .featured-ba {background:var(--light); padding:4rem 5%;}
         .ba-container {max-width:1200px; margin:0 auto;}
         .ba-single {background:white; padding:2rem; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.06); margin-bottom:3rem;}
-        .ba-grid {display:grid; grid-template-columns:1fr 1fr; gap:2rem;}
-        .ba-card {background:var(--light); padding:1.5rem; border-radius:10px; text-align:center;}
-        .ba-card h3 {color:var(--navy); margin-bottom:1rem; font-size:1.2rem;}
-        .ba-card img {width:100%; height:280px; object-fit:cover; border-radius:6px; margin-bottom:1rem;}
         .ba-label {display:inline-block; padding:0.4rem 1.2rem; border-radius:20px; font-weight:bold; margin-bottom:1rem;}
         .before-label {background:#ffcccc; color:#990000;}
         .during-label {background:#fff3cd; color:#856404;}
         .after-label {background:#ccffcc; color:#006600;}
-        .ba-description {max-width:700px; margin:2rem auto 0; text-align:center; font-size:1.1rem; line-height:1.8;}
-        @media (max-width:768px) {.ba-grid {grid-template-columns:1fr;}}
+        .ba-description {max-width:700px; margin:0 auto; text-align:center; font-size:1.1rem; line-height:1.8;}
 
         .commercial {padding:4rem 5%; max-width:1200px; margin:0 auto;}
         .commercial-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(350px, 1fr)); gap:2rem;}
-        .commercial-card {background:white; border-radius:12px; overflow:hidden; box-shadow:0 4px 15px rgba(0,0,0,0.08); transition:transform 0.3s;}
-        .commercial-card:hover {transform:translateY(-5px);}
-        .commercial-card img {width:100%; height:250px; object-fit:cover;}
-        .commercial-card-content {padding:1.5rem;}
+        .commercial-card {background:var(--light); padding:2rem; border-radius:12px; border-left:4px solid var(--navy); box-shadow:0 2px 10px rgba(0,0,0,0.05);}
         .commercial-card h3 {color:var(--navy); margin-bottom:0.5rem; font-size:1.3rem;}
         .commercial-tag {display:inline-block; background:var(--gold); color:white; padding:0.3rem 1rem; border-radius:20px; font-size:0.85rem; font-weight:bold; margin-bottom:1rem;}
 
         .gallery {padding:4rem 5%; max-width:1200px; margin:0 auto;}
         .gallery-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;}
-        .gallery-item {border-radius:10px; overflow:hidden; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform 0.3s; background:white;}
-        .gallery-item:hover {transform:scale(1.03);}
-        .gallery-item img {width:100%; height:220px; object-fit:cover;}
-        .gallery-item p {padding:1rem; text-align:center; color:var(--navy); font-weight:500; line-height:1.4;}
-        .gallery-item .step {display:inline-block; background:var(--gold); color:white; padding:0.25rem 0.75rem; border-radius:15px; font-size:0.85rem; margin-bottom:0.5rem;}
+        .gallery-item {background:var(--light); padding:2rem; border-radius:10px; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.05);}
+        .gallery-item .step {display:inline-block; background:var(--gold); color:white; padding:0.25rem 0.75rem; border-radius:15px; font-size:0.85rem; margin-bottom:1rem;}
 
         .about {padding:4rem 5%; background:var(--light);}
         .about-container {max-width:1000px; margin:0 auto;}
         .about h2 {font-size:2rem; color:var(--navy); text-align:center; margin-bottom:1.5rem;}
         .highlight {color:var(--gold); font-weight:bold;}
-        .about-content {display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:center;}
-        .about-list {list-style:none;}
-        .about-list li {padding:0.5rem 0; border-bottom:1px solid #ddd;}
+        .about-list {list-style:none; max-width:600px; margin:0 auto;}
+        .about-list li {padding:0.8rem 0; border-bottom:1px solid #ddd;}
         .about-list li::before {content:'✓ '; font-weight:bold; color:var(--gold);}
-        @media (max-width:768px) {.about-content {grid-template-columns:1fr;}}
 
         .contact {background:var(--navy); color:white; padding:4rem 5%; text-align:center;}
         .contact h2 {font-size:2rem; margin-bottom:2rem;}
-        .contact-details {font-size:1.2rem; max-width:600px; margin:0 auto;}
+        .contact-details {font-size:1.2rem; max-width:600px; margin:0 auto; line-height:2;}
         .contact-details a {color:var(--gold); text-decoration:none; font-weight:bold;}
         .contact-details a:hover {text-decoration:underline;}
 
@@ -153,157 +140,40 @@
 
 <section class="featured-ba" id="featured">
     <div class="ba-container">
-        <h2 class="section-title">Our Recent Work — Before & After</h2>
+        <h2 class="section-title">Our Recent Work</h2>
 
         <div class="ba-single">
             <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🏠 Failed Felt Roof Repair — Full Strip & Refelt</h3>
-            <div class="ba-grid">
-                <div class="ba-card">
-                    <span class="ba-label before-label">❌ BEFORE</span>
-                    <img src="FB_IMG_1787822180606.jpg" alt="Failed felt roof with perishing bricks">
-                    <h3>Roof Failed</h3>
-                    <p>Old felt roof had failed, and the bricks were perishing and porous — letting in water.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="FB_IMG_1787822093303.jpg" alt="Roof stripped, primed and re-felted">
-                    <h3>Repaired & Guaranteed</h3>
-                    <p>Completely stripped back, all surfaces primed, fully re-felted — carries a <strong>20-year guarantee</strong>.</p>
-                </div>
-            </div>
             <div class="ba-description">
-                <p><strong>✅ Failed Felt Roof Repair — Leicester</strong><br>
-                Roof had suffered felt failure with perishing, porous bricks causing water ingress. We completely stripped the roof back, primed all surfaces, and installed a new high-performance felt system. Fully weatherproofed and backed by a <strong>20-year guarantee</strong>.</p>
+                <p><span class="ba-label before-label">❌ BEFORE</span> — Old felt roof had failed, and the bricks were perishing and porous — letting in water.</p>
+                <br>
+                <p><span class="ba-label after-label">✅ AFTER</span> — Completely stripped back, all surfaces primed, fully re-felted — carries a <strong>20-year guarantee</strong>.</p>
+                <br>
+                <p><strong>✅ Full strip & re-felt — Leicester</strong></p>
             </div>
         </div>
 
         <div class="ba-single">
             <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🚪 Complete Porch Build — From Start to Finish</h3>
-            <div class="ba-grid">
-                <div class="ba-card">
-                    <span class="ba-label before-label">❌ BEFORE</span>
-                    <img src="FB_IMG_1787822222229.jpg" alt="Porch — Before work started">
-                    <h3>Original Site</h3>
-                    <p>Before any work began — preparing the site for a brand-new porch.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label during-label">🏗️ UNDER CONSTRUCTION</span>
-                    <img src="FB_IMG_1787822232393.jpg" alt="Porch — Structure being built">
-                    <h3>Structure Up</h3>
-                    <p>Walls built, roof frame in place — taking shape, brickwork completed.</p>
-                </div>
-            </div>
-            <div class="ba-grid" style="margin-top:1.5rem;">
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ COMPLETE</span>
-                    <img src="FB_IMG_1787822240677.jpg" alt="Porch — Fully finished view 1">
-                    <h3>Finished — View 1</h3>
-                    <p>Roofed, glazed, door fitted — fully weatherproofed and ready to use.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ COMPLETE</span>
-                    <img src="FB_IMG_1787822258100.jpg" alt="Porch — Fully finished view 2">
-                    <h3>Finished — View 2</h3>
-                    <p>Complete build — professional brickwork, quality finish, total transformation.</p>
-                </div>
-            </div>
             <div class="ba-description">
-                <p><strong>✅ Complete Porch Build — From Foundations to Finish — Leicester</strong><br>
-                Full porch construction from start to finish — site preparation, brickwork, roof installation, windows & doors fitted. Every stage completed in-house — no subcontractors, full quality control. Total transformation, built to last.</p>
-            </div>
-        </div>
-
-        <div class="ba-single">
-            <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🏠 Porch Roof Replacement</h3>
-            <div class="ba-grid">
-                <div class="ba-card">
-                    <span class="ba-label before-label">❌ BEFORE</span>
-                    <img src="20240805_142230.jpg" alt="Porch — Before roof replacement">
-                    <h3>Worn Slates & Failed Lead</h3>
-                    <p>Old, weathered slates, perished lead flashing, leaking around the roof edges.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="20240918_105211.jpg" alt="Porch — After roof replacement">
-                    <h3>New Slates & Full Lead Work</h3>
-                    <p>Re-slated with matching tiles + new lead flashing & valleys. 100% weatherproof — original door & windows fully preserved.</p>
-                </div>
-            </div>
-            <div class="ba-description">
-                <p><strong>✅ Porch Roof & Lead Replacement — Leicester</strong><br>
-                Removed worn slates & failed lead. Fully re-slated with matching tiles + new lead flashing & valleys. Weatherproofed & restored — original door, windows & features preserved. Quality workmanship that lasts.</p>
-            </div>
-        </div>
-
-        <div class="ba-single">
-            <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">🏡 Full Roof Transformation — Porch + Main House</h3>
-            <div class="ba-grid">
-                <div class="ba-card">
-                    <span class="ba-label before-label">❌ BEFORE</span>
-                    <img src="20240116_162210.jpg" alt="Porch — Old felt roof before">
-                    <h3>Porch: Old Worn Felt</h3>
-                    <p>Aged, weathered felt — past its best & in need of replacement.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label before-label">❌ BEFORE</span>
-                    <img src="20240116_164138.jpg" alt="Main house — Old roof before">
-                    <h3>Main Roof: Aged Tiles</h3>
-                    <p>Worn tiles, failing mortar ridges, weathered & letting in water.</p>
-                </div>
-            </div>
-            <div class="ba-grid" style="margin-top:2rem;">
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="20240213_122012.jpg" alt="Porch — New felt roof installed">
-                    <h3>Porch: New Felt Roof</h3>
-                    <p>Old felt removed — new high-performance felt fully bonded & weatherproofed.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="20240213_122024.jpg" alt="Main house — New tiled roof with dry ridge">
-                    <h3>Main Roof: New Tiles + Dry Ridge</h3>
-                    <p>Full re-tiled with modern tiles + complete dry ridge system — no mortar, fully secure, guaranteed weatherproof.</p>
-                </div>
-            </div>
-            <div class="ba-description">
-                <p><strong>✅ Full Roof Transformation — Porch Re-Felted + Main Roof Re-Tiled — Leicester</strong><br>
-                Porch: old worn felt removed & replaced with new high-performance felt system. Main house roof: completely stripped & re-tiled with modern tiles + full dry ridge system — no mortar, secure, weatherproof. Total property transformation.</p>
+                <p><span class="ba-label before-label">❌ BEFORE</span> — Site preparation for brand-new porch.</p>
+                <br>
+                <p><span class="ba-label during-label">🏗️ UNDER CONSTRUCTION</span> — Walls built, roof frame in place — taking shape.</p>
+                <br>
+                <p><span class="ba-label after-label">✅ COMPLETE</span> — Roofed, glazed, door fitted — fully weatherproofed and ready to use.</p>
+                <br>
+                <p><strong>✅ Full porch build — Foundations to finish — Leicester</strong></p>
             </div>
         </div>
 
         <div class="ba-single">
             <h3 style="text-align:center; color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem;">📐 Box Gutter Replacement</h3>
-            <div class="ba-grid">
-                <div class="ba-card">
-                    <span class="ba-label before-label">❌ BEFORE</span>
-                    <img src="20240111_100949.jpg" alt="Box gutter — Old leaking gutter">
-                    <h3>Old Leaking Box Gutter</h3>
-                    <p>Aged, leaking, deteriorated — letting in water & causing damage.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="20240112_144545.jpg" alt="Box gutter — New gutter installed">
-                    <h3>New Box Gutter Fitted</h3>
-                    <p>Old gutter removed — new system installed, fully lined & sealed.</p>
-                </div>
-            </div>
-            <div class="ba-grid" style="margin-top:2rem;">
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="20240115_123001.jpg" alt="Box gutter — Fully fitted & secured">
-                    <h3>Fully Secured & Reinforced</h3>
-                    <p>Reinforced joints, securely fixed — built to last & fully weatherproof.</p>
-                </div>
-                <div class="ba-card">
-                    <span class="ba-label after-label">✅ AFTER</span>
-                    <img src="20240116_150815.jpg" alt="Box gutter — Complete & weatherproofed">
-                    <h3>Complete & Weatherproofed</h3>
-                    <p>Full system tested — no leaks, clean finish, guaranteed performance.</p>
-                </div>
-            </div>
             <div class="ba-description">
-                <p><strong>✅ Box Gutter Replacement — Leicester</strong><br>
-                Removed old, leaking box gutter and installed brand-new fully lined system. Reinforced, sealed, secured & tested — guaranteed weatherproof and built to last. Professional solution to water ingress problems.</p>
+                <p><span class="ba-label before-label">❌ BEFORE</span> — Old, leaking, deteriorated — letting in water & causing damage.</p>
+                <br>
+                <p><span class="ba-label after-label">✅ AFTER</span> — Old gutter removed — new system installed, fully lined, sealed & tested.</p>
+                <br>
+                <p><strong>✅ Box gutter replacement — Leicester</strong></p>
             </div>
         </div>
 
@@ -315,20 +185,14 @@
     <p style="text-align:center; max-width:700px; margin:0 auto 3rem; font-size:1.1rem;">We also undertake large-scale commercial roofing work — from industrial units to retail premises. Fully insured, experienced & reliable.</p>
     <div class="commercial-grid">
         <div class="commercial-card">
-            <img src="FB_IMG_1787822018606.jpg" alt="Commercial roofing project — Leicester">
-            <div class="commercial-card-content">
-                <span class="commercial-tag">COMMERCIAL</span>
-                <h3>Commercial Roofing Project</h3>
-                <p>Large-scale roof installation — industrial premises. Full system replacement, completed on time & within budget.</p>
-            </div>
+            <span class="commercial-tag">COMMERCIAL</span>
+            <h3>Commercial Roofing Projects</h3>
+            <p>Large-scale roof installations — industrial & commercial premises. Full system replacement, completed on time & within budget.</p>
         </div>
         <div class="commercial-card">
-            <img src="FB_IMG_1787822093303.jpg" alt="Commercial roofing project — East Midlands">
-            <div class="commercial-card-content">
-                <span class="commercial-tag">COMMERCIAL</span>
-                <h3>Industrial Roofing Work</h3>
-                <p>Commercial property roofing — large flat roof system. Fully bonded, weatherproof, and built to withstand heavy use.</p>
-            </div>
+            <span class="commercial-tag">COMMERCIAL</span>
+            <h3>Industrial Roofing Work</h3>
+            <p>Commercial property roofing — large flat roof systems. Fully bonded, weatherproof, and built to withstand heavy use.</p>
         </div>
     </div>
     <p style="text-align:center; margin-top:3rem; font-size:1.1rem; font-weight:500;">📞 For commercial enquiries & contracts — call us directly on <a href="tel:07730402870" style="color:var(--gold); font-weight:bold;">07730 402 870</a></p>
@@ -338,20 +202,20 @@
     <h2 class="section-title">Water Feature — Full Build Process</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="20260408_140306.jpg" alt="Timber structure and first coat of resin">
-            <p><span class="step">Step 1</span><br>Timber structure & first coat of resin</p>
+            <span class="step">Step 1</span>
+            <p>Timber structure & first coat of resin</p>
         </div>
         <div class="gallery-item">
-            <img src="20260409_113331.jpg" alt="Second coat of resin with final colour">
-            <p><span class="step">Step 2</span><br>Second coat of resin — final colour applied</p>
+            <span class="step">Step 2</span>
+            <p>Second coat of resin — final colour applied</p>
         </div>
         <div class="gallery-item">
-            <img src="20260425_103139.jpg" alt="Water testing — filling and checking">
-            <p><span class="step">Step 3</span><br>Water testing — filling & checking for leaks</p>
+            <span class="step">Step 3</span>
+            <p>Water testing — filling & checking for leaks</p>
         </div>
         <div class="gallery-item">
-            <img src="20260525_103051.jpg" alt="Fully completed water feature">
-            <p><span class="step">Complete ✅</span><br>Finished water feature — fully operational</p>
+            <span class="step">Complete ✅</span>
+            <p>Finished water feature — fully operational</p>
         </div>
     </div>
 </section>
@@ -359,12 +223,9 @@
 <section class="about" id="about">
     <div class="about-container">
         <h2>About <span class="highlight">Wilson's Flat Roofs</span></h2>
-        <div class="about-content">
-            <div>
-                <p>Based in Leicester, we are a local, family-run business specialising in all aspects of domestic and commercial roofing and building work — from complete porch builds to full roof replacements and repairs. With years of experience and a commitment to quality, we take pride in every project we complete — big or small.</p>
-                <br>
-                <p>From small repairs to full installations, porch builds, refurbishments, full roof replacements, box gutter work, commercial contracts and bespoke water features — we offer a professional, reliable service with free no-obligation quotes.</p>
-            </div>
+        <div class="ba-description">
+            <p>Based in Leicester, we are a local, family-run business specialising in all aspects of domestic and commercial roofing and building work — from complete porch builds to full roof replacements and repairs. With years of experience and a commitment to quality, we take pride in every project we complete — big or small.</p>
+            <br>
             <ul class="about-list">
                 <li>Free, no-obligation quotes</li>
                 <li>Fully insured & qualified</li>
@@ -372,7 +233,7 @@
                 <li>Complete porch builds undertaken</li>
                 <li>20-year guarantee on felt roofs</li>
                 <li>All work guaranteed</li>
-                <li>Areas: Leicester & up to 50 miles</li>
+                <li>Based in Leicester — covering East Midlands & up to 50 miles</li>
             </ul>
         </div>
     </div>
